@@ -1,0 +1,51 @@
+{
+	"name": "@hsz1273327/nativescript-color-wheel",
+	"version": "1.0.15",
+	"description": "Simple and flexible color picker for NativeScript Core forked from @sergeymell/nativescript-color-wheel",
+	"main": "index",
+	"typings": "index.d.ts",
+	"nativescript": {
+		"platforms": {
+			"ios": "8.0.0",
+			"android": "8.0.0"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hsz1273327/nativescript-color-wheel"
+	},
+	"keywords": [
+		"NativeScript",
+		"iOS",
+		"Android",
+		"Color picker",
+		"Color wheel"
+	],
+	"author": {
+		"name": "hsz",
+		"email": "hsz1273327@gmail.com"
+	},
+	"bugs": {
+		"url": "https://github.com/hsz1273327/nativescript-color-wheel/issues"
+	},
+	"license": "Apache-2.0",
+	"homepage": "https://github.com/hsz1273327/nativescript-color-wheel",
+	"readmeFilename": "README.md",
+    "devDependencies": {
+        "@nativescript/android": "~8.7.0",
+        "@nativescript/core": "~8.7.1",
+        "@nativescript/ios": "~8.7.0",
+        "@nativescript/tailwind": "~2.0.1",
+        "@nativescript/types": "~8.7.0",
+        "@nativescript/webpack": "~5.0.0",
+        "@types/node": "~17.0.21",
+        "tailwindcss": "^3.1.8",
+        "typescript": "^5.2.2",
+        "ts-patch": "^3.1.2"
+    },
+    "scripts": {
+        "ts-patch": "node_modules/.bin/ts-patch i",
+        "build": "npm i && node_modules/.bin/tsc -skipLibCheck",
+        "publish": "npm login && npm publish"
+    }
+}
